@@ -1,1 +1,1 @@
-This repo contains solutions for Advent of Code 2022 in Kotlin!
+Having fun with Kotlin for Advent of Code 2022!
