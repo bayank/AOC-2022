@@ -10,7 +10,7 @@ fun part1(input: String): Int {
         .map { it.get(0) to it.get(2).minus(23) }
         .map { (theirs, mine) ->
             val myScore = mine.minus('A').plus(1)
-            val matchScore = when(mine.minus(theirs)) {
+            val theirScore = when(mine.minus(theirs)) {
                 -2 -> 6
                 -1 -> 0
                 0 -> 3
@@ -18,26 +18,23 @@ fun part1(input: String): Int {
                 2 -> 0
                 else -> 0
             }
-            myScore + matchScore
+            myScore + theirScore
         }.sum()
 }
 fun part2(input: String): Int {
     return input.lineSequence()
         .map { it.get(0) to it.get(2) }
-        .map { (theirs, gameState) ->
-            theirs to when (gameState) {
-                // Lose
-                'X' -> 'A'.plus(theirs.minus('A').minus(1).mod(3))
-                // Draw
-                'Y' -> theirs
-                // Win
-                'Z' -> 'A'.plus(theirs.minus('A').plus(1).mod(3))
+        .map { (theirs, outcome) ->
+            theirs to when (outcome) {
+                'X' -> 'A'.plus(theirs.minus('A').minus(1).mod(3)) // Lose
+                'Y' -> theirs // Draw
+                'Z' -> 'A'.plus(theirs.minus('A').plus(1).mod(3)) // Win
                 else -> theirs
             }
         }
         .map { (theirs, mine) ->
             val myScore = mine.minus('A').plus(1)
-            val matchScore = when(mine.minus(theirs).mod(3)) {
+            val theirScore = when(mine.minus(theirs).mod(3)) {
                 -2 -> 6
                 -1 -> 0
                 0 -> 3
@@ -45,6 +42,6 @@ fun part2(input: String): Int {
                 2 -> 0
                 else -> 0
             }
-            myScore + matchScore
+            myScore + theirScore
         }.sum()
 }
