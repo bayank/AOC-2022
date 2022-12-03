@@ -19,7 +19,7 @@ fun main() {
             .sum()
     }
 
-    val input = File("src/main/kotlin/input.txt").readText()
+    val input = File("src/main/kotlin/day01_input.txt").readText()
     println(part1(input))
     println(part2(input))
 }

@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="141b38e6-8027-4a4b-865b-7d26c5447bf6" name="Changes" comment="Day 1">
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day02.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day02_input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day01.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day01.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day01_input.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669955951955</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Day 1">
+      <created>1669956211934</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669956211934</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
