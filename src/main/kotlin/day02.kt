@@ -1,4 +1,5 @@
 import java.io.File
+
 fun main() {
     val input = File("src/main/kotlin/day02_input.txt").readText()
     println("Part 1 answer is: " + part1(input))
@@ -21,6 +22,7 @@ fun part1(input: String): Int {
             myScore + theirScore
         }.sum()
 }
+
 fun part2(input: String): Int {
     return input.lineSequence()
         .map { it.get(0) to it.get(2) }
